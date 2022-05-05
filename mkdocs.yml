@@ -1,0 +1,29 @@
+site_name: Fenswood Scenario
+theme: readthedocs
+repo_url: https://github.com/StarlingUAS/fenswood_volcano_template
+site_description: 'Fenswood Volcano Template Project'
+docs_dir: 'tutorial'
+copyright: Copyright &copy; 2021 University of Bristol Flight Laboratory
+
+markdown_extensions:
+  - toc:
+      permalink: True
+
+plugins:
+  - search
+  - macros
+  - enumerate-headings:
+      toc_depth: 3
+
+nav:
+  - "Tutorials":
+    - "Getting Started": 'getting_started.md'
+    - "Controlling a Drone using Mavlink Over ROS": 'drone_control.md'
+    - "An Old-School Example": 'old_school.md'
+    - "Implementing the contorller as a class" : 'simple_class.md'
+    - "A More Modular Controller": 'modular.md'
+    - "Adding A Finite State Machine": 'finite_state.md'
+    - "Using A Ros Timer": 'ros_timer.md'
+    - "Adding Perception": 'perception.md'
+    - "Starling": 'starling.md'
+  
