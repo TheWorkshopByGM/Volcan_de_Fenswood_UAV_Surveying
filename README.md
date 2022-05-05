@@ -1,8 +1,8 @@
-# Fenswood Volcano Template
+# Volcan de Fenswood UAV Surveying 
 
-This repository provides a template and tutorial to get you started writing code and running simulations for the Group Project in Aerial Robotics, based on the Fenswood Volcano scenario.
+This repository provides a UAV volcano sruveying simulation based of the Starling UAS project, which provides a docker application which allows for easy development of UAV simulations and control supported by a ROS2 framework. 
 
-## Tutorials
+## Starling UAS Tutorials
 
 The tutorial is hosted here: https://starlinguas.github.io/fenswood_volcano_template/
 
