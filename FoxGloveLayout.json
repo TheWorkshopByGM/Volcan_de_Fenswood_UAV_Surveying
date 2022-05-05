@@ -1,0 +1,492 @@
+{
+  "layout": "Tab!e18u01",
+  "configById": {
+    "ImageViewPanel!1nj5576": {
+      "cameraTopic": "/vehicle_1/camera/image_raw",
+      "customMarkerTopicOptions": [],
+      "enabledMarkerTopics": [],
+      "mode": "fit",
+      "pan": {
+        "x": 0,
+        "y": 0
+      },
+      "rotation": 0,
+      "synchronize": false,
+      "transformMarkers": true,
+      "zoom": 1
+    },
+    "ImageViewPanel!45zuvh4": {
+      "cameraTopic": "/error_status",
+      "customMarkerTopicOptions": [],
+      "enabledMarkerTopics": [],
+      "mode": "fit",
+      "pan": {
+        "x": 0,
+        "y": 0
+      },
+      "rotation": 0,
+      "synchronize": false,
+      "transformMarkers": true,
+      "zoom": 1
+    },
+    "RawMessages!33ux9hp": {
+      "topicPath": "/clock",
+      "diffTopicPath": "",
+      "diffMethod": "custom",
+      "diffEnabled": false,
+      "showFullMessageForDiff": false
+    },
+    "ImageViewPanel!84pw8e": {
+      "cameraTopic": "/current_state",
+      "customMarkerTopicOptions": [],
+      "enabledMarkerTopics": [],
+      "mode": "fit",
+      "pan": {
+        "x": 0,
+        "y": 0
+      },
+      "rotation": 0,
+      "synchronize": false,
+      "transformMarkers": true,
+      "zoom": 1
+    },
+    "Publish!3atnhku": {
+      "topicName": "/interaction_topic",
+      "datatype": "std_msgs/msg/String",
+      "buttonText": "Publish",
+      "buttonTooltip": "",
+      "buttonColor": "#00A871",
+      "advancedView": true,
+      "value": "{\n  \"data\": \"launch\"\n}"
+    },
+    "ImageViewPanel!4evmpi6": {
+      "cameraTopic": "/updated_map",
+      "enabledMarkerTopics": [],
+      "customMarkerTopicOptions": [],
+      "scale": 0.2,
+      "transformMarkers": false,
+      "synchronize": false,
+      "mode": "fit",
+      "zoomPercentage": 31.5,
+      "offset": [
+        0,
+        3.3599999999999994
+      ],
+      "pan": {
+        "x": -6.7832873555680635,
+        "y": 2.9727021939461338
+      },
+      "zoom": 1,
+      "rotation": 0
+    },
+    "ImageViewPanel!4ecdxn5": {
+      "cameraTopic": "/error_status",
+      "enabledMarkerTopics": [],
+      "mode": "fit",
+      "pan": {
+        "x": 0,
+        "y": 0
+      },
+      "rotation": 0,
+      "synchronize": false,
+      "transformMarkers": true,
+      "zoom": 1
+    },
+    "ImageViewPanel!14ik4jw": {
+      "cameraTopic": "/current_state",
+      "enabledMarkerTopics": [],
+      "mode": "fit",
+      "pan": {
+        "x": 0,
+        "y": 0
+      },
+      "rotation": 0,
+      "synchronize": false,
+      "transformMarkers": true,
+      "zoom": 1
+    },
+    "RawMessages!28lujjy": {
+      "topicPath": "/vehicle_1/mavros/global_position/compass_hdg",
+      "diffTopicPath": "",
+      "diffMethod": "custom",
+      "diffEnabled": false,
+      "showFullMessageForDiff": false
+    },
+    "RawMessages!qslcxm": {
+      "topicPath": "/vehicle_1/mavros/global_position/global.altitude",
+      "diffTopicPath": "",
+      "diffMethod": "custom",
+      "diffEnabled": false,
+      "showFullMessageForDiff": false
+    },
+    "Publish!1y894jy": {
+      "topicName": "/interaction_topic",
+      "datatype": "std_msgs/msg/String",
+      "buttonText": "Publish",
+      "buttonTooltip": "",
+      "buttonColor": "#00A871",
+      "advancedView": true,
+      "value": "{\n  \"data\": \"launch\"\n}"
+    },
+    "Publish!4es0f6b": {
+      "topicName": "/interaction_topic",
+      "datatype": "std_msgs/msg/String",
+      "buttonText": "Publish",
+      "buttonTooltip": "",
+      "buttonColor": "#00A871",
+      "advancedView": true,
+      "value": "{\n  \"data\": \"return\"\n}"
+    },
+    "Teleop!2z83sv5": {
+      "topic": "/vehicle_1/mavros/setpoint_velocity/cmd_vel_unstamped",
+      "publishRate": 5,
+      "upButton": {
+        "field": "linear-z",
+        "value": 2
+      },
+      "downButton": {
+        "field": "linear-z",
+        "value": -2
+      },
+      "leftButton": {
+        "field": "angular-z",
+        "value": 0.1
+      },
+      "rightButton": {
+        "field": "angular-z",
+        "value": -0.1
+      }
+    },
+    "Teleop!2p4iurt": {
+      "topic": "/vehicle_1/mavros/setpoint_velocity/cmd_vel_unstamped",
+      "publishRate": 5,
+      "upButton": {
+        "field": "linear-y",
+        "value": 2
+      },
+      "downButton": {
+        "field": "linear-y",
+        "value": -2
+      },
+      "leftButton": {
+        "field": "linear-x",
+        "value": -2
+      },
+      "rightButton": {
+        "field": "linear-x",
+        "value": 2
+      }
+    },
+    "ImageViewPanel!49dyz4w": {
+      "cameraTopic": "/vehicle_1/camera/image_raw",
+      "enabledMarkerTopics": [],
+      "mode": "fit",
+      "pan": {
+        "x": -26.044223228067523,
+        "y": -14.672725690597375
+      },
+      "rotation": 0,
+      "synchronize": false,
+      "transformMarkers": true,
+      "zoom": 1.0950269950881906
+    },
+    "ImageViewPanel!29sgyu1": {
+      "cameraTopic": "/vehicle_1/controller/yellow_img",
+      "enabledMarkerTopics": [],
+      "mode": "fit",
+      "pan": {
+        "x": 0.26270339737860215,
+        "y": 22.044584996588057
+      },
+      "rotation": 0,
+      "synchronize": false,
+      "transformMarkers": true,
+      "zoom": 0.9706153625669441
+    },
+    "ImageViewPanel!kvhdwt": {
+      "cameraTopic": "/vehicle_1/controller/red_img",
+      "enabledMarkerTopics": [],
+      "mode": "fit",
+      "pan": {
+        "x": 0.26270339737860215,
+        "y": 22.044584996588057
+      },
+      "rotation": 0,
+      "synchronize": false,
+      "transformMarkers": true,
+      "zoom": 0.9706153625669441
+    },
+    "ImageViewPanel!2i754ge": {
+      "cameraTopic": "/cropped_img",
+      "enabledMarkerTopics": [],
+      "mode": "fit",
+      "pan": {
+        "x": 0.26270339737860215,
+        "y": 22.044584996588057
+      },
+      "rotation": 0,
+      "synchronize": false,
+      "transformMarkers": true,
+      "zoom": 0.9706153625669441
+    },
+    "ImageViewPanel!1d30tbe": {
+      "cameraTopic": "/vehicle_1/controller/yellow_img_persp",
+      "enabledMarkerTopics": [],
+      "mode": "fit",
+      "pan": {
+        "x": 0.26270339737860215,
+        "y": 22.044584996588057
+      },
+      "rotation": 0,
+      "synchronize": false,
+      "transformMarkers": true,
+      "zoom": 0.9706153625669441
+    },
+    "ImageViewPanel!46m9rdt": {
+      "cameraTopic": "/vehicle_1/controller/red_img_persp",
+      "enabledMarkerTopics": [],
+      "mode": "fit",
+      "pan": {
+        "x": -1.7372966026213978,
+        "y": 8.044584996588057
+      },
+      "rotation": 0,
+      "synchronize": false,
+      "transformMarkers": true,
+      "zoom": 0.9706153625669441
+    },
+    "ImageViewPanel!hz0322": {
+      "cameraTopic": "/no_land_mask",
+      "enabledMarkerTopics": [],
+      "mode": "fit",
+      "pan": {
+        "x": -5.737296602621398,
+        "y": 3.044584996588057
+      },
+      "rotation": 0,
+      "synchronize": false,
+      "transformMarkers": true,
+      "zoom": 0.9706153625669441
+    },
+    "ImageViewPanel!xonc65": {
+      "cameraTopic": "/updated_map",
+      "enabledMarkerTopics": [],
+      "mode": "fit",
+      "pan": {
+        "x": 0,
+        "y": 0
+      },
+      "rotation": 0,
+      "synchronize": false,
+      "transformMarkers": true,
+      "zoom": 1
+    },
+    "ImageViewPanel!3w1zwhs": {
+      "cameraTopic": "/no_land_mask2",
+      "enabledMarkerTopics": [],
+      "mode": "fit",
+      "pan": {
+        "x": -5.737296602621398,
+        "y": 3.044584996588057
+      },
+      "rotation": 0,
+      "synchronize": false,
+      "transformMarkers": true,
+      "zoom": 0.9706153625669441
+    },
+    "ImageViewPanel!46vl32i": {
+      "cameraTopic": "/no_land_mask4",
+      "enabledMarkerTopics": [],
+      "mode": "fit",
+      "pan": {
+        "x": 0.7619454717092395,
+        "y": 8.094326433251268
+      },
+      "rotation": 0,
+      "synchronize": false,
+      "transformMarkers": true,
+      "zoom": 1.010430349972983
+    },
+    "ImageViewPanel!3jyaum": {
+      "cameraTopic": "/no_land_mask3",
+      "enabledMarkerTopics": [],
+      "mode": "fit",
+      "pan": {
+        "x": -5.737296602621398,
+        "y": 3.044584996588057
+      },
+      "rotation": 0,
+      "synchronize": false,
+      "transformMarkers": true,
+      "zoom": 0.9706153625669441
+    },
+    "ImageViewPanel!29lpb04": {
+      "cameraTopic": "/no_land_mask5",
+      "enabledMarkerTopics": [],
+      "mode": "fit",
+      "pan": {
+        "x": -5.737296602621398,
+        "y": 3.044584996588057
+      },
+      "rotation": 0,
+      "synchronize": false,
+      "transformMarkers": true,
+      "zoom": 0.9706153625669441
+    },
+    "ImageViewPanel!lazp6y": {
+      "cameraTopic": "/no_fly_mask",
+      "enabledMarkerTopics": [],
+      "mode": "fit",
+      "pan": {
+        "x": 29.082330397088516,
+        "y": 16.263192219192092
+      },
+      "rotation": 0,
+      "synchronize": false,
+      "transformMarkers": true,
+      "zoom": 0.675949368133605
+    },
+    "Tab!e18u01": {
+      "activeTabIdx": 0,
+      "tabs": [
+        {
+          "title": "User",
+          "layout": {
+            "first": {
+              "first": "ImageViewPanel!1nj5576",
+              "second": {
+                "first": {
+                  "first": "ImageViewPanel!45zuvh4",
+                  "second": "RawMessages!33ux9hp",
+                  "direction": "column",
+                  "splitPercentage": 69.5054945054945
+                },
+                "second": {
+                  "first": "ImageViewPanel!84pw8e",
+                  "second": "Publish!3atnhku",
+                  "direction": "column",
+                  "splitPercentage": 33.51648351648349
+                },
+                "direction": "row"
+              },
+              "direction": "column",
+              "splitPercentage": 64.29294013059072
+            },
+            "second": "ImageViewPanel!4evmpi6",
+            "direction": "row",
+            "splitPercentage": 53.345610804174335
+          }
+        },
+        {
+          "title": "Developper",
+          "layout": {
+            "first": {
+              "first": {
+                "first": {
+                  "first": "ImageViewPanel!4ecdxn5",
+                  "second": "ImageViewPanel!14ik4jw",
+                  "direction": "column"
+                },
+                "second": {
+                  "first": {
+                    "first": "RawMessages!28lujjy",
+                    "second": "RawMessages!qslcxm",
+                    "direction": "column"
+                  },
+                  "second": {
+                    "first": "Publish!1y894jy",
+                    "second": "Publish!4es0f6b",
+                    "direction": "column"
+                  },
+                  "direction": "row",
+                  "splitPercentage": 47.87234042553191
+                },
+                "direction": "column",
+                "splitPercentage": 55.08771929824561
+              },
+              "second": {
+                "first": "Teleop!2z83sv5",
+                "second": "Teleop!2p4iurt",
+                "direction": "row",
+                "splitPercentage": 47.87234042553191
+              },
+              "direction": "column",
+              "splitPercentage": 80.77312160877962
+            },
+            "second": {
+              "first": {
+                "first": "ImageViewPanel!49dyz4w",
+                "second": {
+                  "first": {
+                    "first": {
+                      "first": "ImageViewPanel!29sgyu1",
+                      "second": "ImageViewPanel!kvhdwt",
+                      "direction": "row"
+                    },
+                    "second": "ImageViewPanel!2i754ge",
+                    "direction": "row",
+                    "splitPercentage": 66.07142857142857
+                  },
+                  "second": {
+                    "first": {
+                      "first": "ImageViewPanel!1d30tbe",
+                      "second": "ImageViewPanel!46m9rdt",
+                      "direction": "row"
+                    },
+                    "second": "ImageViewPanel!hz0322",
+                    "direction": "row",
+                    "splitPercentage": 66.66666666666666
+                  },
+                  "direction": "column"
+                },
+                "direction": "column",
+                "splitPercentage": 61.44814689923669
+              },
+              "second": {
+                "first": "ImageViewPanel!xonc65",
+                "second": {
+                  "first": {
+                    "first": {
+                      "first": "ImageViewPanel!3w1zwhs",
+                      "second": "ImageViewPanel!46vl32i",
+                      "direction": "row"
+                    },
+                    "second": {
+                      "first": "ImageViewPanel!3jyaum",
+                      "second": "ImageViewPanel!29lpb04",
+                      "direction": "row"
+                    },
+                    "direction": "column"
+                  },
+                  "second": "ImageViewPanel!lazp6y",
+                  "direction": "row"
+                },
+                "direction": "column",
+                "splitPercentage": 61.44814689923669
+              },
+              "direction": "row",
+              "splitPercentage": 40.22346368715083
+            },
+            "direction": "row",
+            "splitPercentage": 23.081645181092693
+          }
+        }
+      ]
+    }
+  },
+  "globalVariables": {
+    "track_id": 34,
+    "globalVariable": 0,
+    "Takeoff": 0,
+    "ApproveLandingLocation": 0,
+    "takeoff_command": 0,
+    "my_id": 101
+  },
+  "userNodes": {},
+  "linkedGlobalVariables": [],
+  "playbackConfig": {
+    "speed": 1,
+    "messageOrder": "receiveTime",
+    "timeDisplayMethod": "ROS"
+  }
+}
