@@ -345,9 +345,10 @@ class FenswoodDroneController(Node):
                     self.get_logger().info('Fly to:{},{}'.format(self.stage_1_waypoints_latlong[self.waypoint_index][0],self.stage_1_waypoints_latlong[self.waypoint_index][1]))
                     self.flyto(self.stage_1_waypoints_latlong[self.waypoint_index][0], self.stage_1_waypoints_latlong[self.waypoint_index][1], self.init_alt + self.desired_altitude - 47.0) # unexplained correction factor on altitude
                     return('on_way')
-            elif self.interaction_command == 'abort':#James_edit
-                self.error = 'user_aborted'#James_edit
-                return('follow_path_home')#James_edit
+            elif self.interaction_command == 'abort':
+                self.error = 'user_aborted'
+                self.waypoint_index = self.waypoint_index -1
+                return('follow_path_home2')
             elif self.waypoint_index == self.stage_1_waypoints_latlong.shape[0]:
                 self.get_logger().info('Follow Path reached END OF PATH!')
                 self.move_camera(81)
@@ -358,6 +359,9 @@ class FenswoodDroneController(Node):
                 return('on_way')          
 
         elif self.control_state == 'on_way':
+            if self.interaction_command == 'abort':
+                self.error = 'user_aborted'
+                return('follow_path_home2')
             distance = self.distance_to_last()
             if abs(distance) < 0.00001:
                 self.get_logger().info('Close enough to target distance={}'.format(distance))
@@ -396,6 +400,10 @@ class FenswoodDroneController(Node):
                 return('follow_path')
 
         elif self.control_state == 'look_at_volcano':
+            if self.interaction_command == 'abort':
+                self.error = 'user_aborted'
+                self.waypoint_index = self.waypoint_index -1
+                return('follow_path_home2')
             self.desired_head = 270
             self.head_error = self.desired_head - self.heading
             if self.head_error < -5:
@@ -419,6 +427,10 @@ class FenswoodDroneController(Node):
                 return('img_processing')
 
         elif self.control_state == 'img_processing':
+            if self.interaction_command == 'abort':
+                self.error = 'user_aborted'
+                self.waypoint_index = self.waypoint_index -1
+                return('follow_path_home2')
             if (self.land_waypoints_received_1 == True) and (self.land_waypoints_received_2 == True):
                 return('follow_path_to_land')
             else:
@@ -432,7 +444,8 @@ class FenswoodDroneController(Node):
                 self.get_logger().info('if self.waypoint_index_to_land == 0!')
                 if len(self.land_waypoints) == 0:
                     self.get_logger().info('if len(self.land_waypoints) == 0:')
-                    return('follow_path_home')
+                    self.waypoint_index = self.waypoint_index -1
+                    return('follow_path_home2')
                 else:
                     self.get_logger().info('Else Fly to:{},{}'.format(self.land_waypoints[self.waypoint_index_to_land][0],self.land_waypoints[self.waypoint_index_to_land][1]))
                     self.flyto(self.land_waypoints[self.waypoint_index_to_land][0], self.land_waypoints[self.waypoint_index_to_land][1], self.init_alt + self.desired_altitude - 47.0) # unexplained correction factor on altitude
@@ -452,6 +465,9 @@ class FenswoodDroneController(Node):
                 return('on_way_to_land')          
 
         elif self.control_state == 'on_way_to_land':
+            if self.interaction_command == 'abort':
+                self.error = 'user_aborted'
+                return('follow_path_home')
             self.get_logger().info('On Way to Land!')
             distance = self.distance_to_last()
             if abs(distance) < 0.00001:
@@ -467,6 +483,9 @@ class FenswoodDroneController(Node):
                 return('on_way_to_land')
         
         elif self.control_state == 'landing_on_crater':
+            if self.interaction_command == 'abort':
+                self.error = 'user_aborted'
+                return('follow_path_home')
             self.get_logger().info('Landing!')
             if self.last_alt_rel < 5.0:
                 self.get_logger().info('Close enough to land altitude={}'.format(self.last_alt_rel))
